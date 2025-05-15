@@ -33,6 +33,8 @@ class Program
         {
             matchResults.Add(match);
         }
+        matches = matchResults;
+        Console.WriteLine(matches);
 
         Dictionary<string, int> results = ProccessScores(matchResults);
 
@@ -104,7 +106,7 @@ class Program
     static void PrintWithRank(Dictionary<string, int> results)
     {
         int rank = 0;
-        int prevScore = -1;;
+        int prevScore = -1; ;
 
         foreach (KeyValuePair<string, int> team in results.OrderByDescending(i => i.Value).ThenBy(x => x.Key))
         {
@@ -115,7 +117,7 @@ class Program
             }
             Console.WriteLine($"{rank}. {team.Key}, {team.Value} {(team.Value == 1 ? "pt" : "pts")}");
         }
-        
+
     }
 
 }
