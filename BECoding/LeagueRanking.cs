@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!"); 
-
-class Program
+﻿public class LeagueRanking
 {
     public class Team
     {
@@ -15,7 +12,6 @@ class Program
         }
     }
 
-
     static void Main()
     {
         IEnumerable<string> matches;
@@ -28,8 +24,6 @@ class Program
         {
             matchResults.Add(match);
         }
-        matches = matchResults;
-        Console.WriteLine(matches);
 
         Dictionary<string, int> results = ProccessScores(matchResults);
 
@@ -93,6 +87,9 @@ class Program
     {
         var trimmed = input.Trim();
         int lastSpace = trimmed.LastIndexOf(' ');
+        if (lastSpace == -1)
+            throw new ArgumentException("Team information incomplete");
+
         string name = trimmed.Substring(0, lastSpace);
         int score = int.Parse(trimmed.Substring(lastSpace + 1));
         return new Team(name, score);
@@ -101,7 +98,7 @@ class Program
     static void PrintWithRank(Dictionary<string, int> results)
     {
         int rank = 0;
-        int prevScore = -1; ;
+        int prevScore = -1;
 
         foreach (KeyValuePair<string, int> team in results.OrderByDescending(i => i.Value).ThenBy(x => x.Key))
         {

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BECoding", "BECoding\BECoding.csproj", "{438A6789-713A-426B-9C58-109B89DA9A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BECodingTest", "BECodingTest\BECodingTest.csproj", "{2F53F1A4-83DD-4A09-86F5-2850A772F8BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{438A6789-713A-426B-9C58-109B89DA9A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{438A6789-713A-426B-9C58-109B89DA9A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{438A6789-713A-426B-9C58-109B89DA9A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F53F1A4-83DD-4A09-86F5-2850A772F8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F53F1A4-83DD-4A09-86F5-2850A772F8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F53F1A4-83DD-4A09-86F5-2850A772F8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F53F1A4-83DD-4A09-86F5-2850A772F8BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
