@@ -1,11 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!"); 
 
-using System;
-using System.ComponentModel.Design;
-using System.Diagnostics;
-using static Program;
-
 class Program
 {
     public class Team
